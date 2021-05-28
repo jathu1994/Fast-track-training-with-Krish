@@ -33,8 +33,10 @@ function findThirdLargestNumber(arr){
 
 }
 
-var items = [5, 3, 7, 6, 2, 9];
+module.exports = {
+    findThirdLargestNumber
 
-console.log(findThirdLargestNumber(items));
-console.log(items);
+};
+
+
 

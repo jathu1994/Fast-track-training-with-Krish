@@ -1,0 +1,12 @@
+{
+  "name": "third_lagest_number",
+  "version": "1.0.0",
+  "description": "application to find third largest element from a given array",
+  "main": "Application.js",
+  "scripts": {
+    "start": "node Application.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jatharthan",
+  "license": "ISC"
+}
