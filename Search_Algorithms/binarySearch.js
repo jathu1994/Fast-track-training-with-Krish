@@ -1,3 +1,9 @@
+/*
+this assumes the array is already sorted
+it devides the array into two halfs by a middle element
+compares and check the search element higher or lower and take the relevant half and discard the other
+this will continue until element found at middle or left with only one element
+*/
 function binarySearch(arr, searchValue, low, high) {
 
     if(low<=high){
@@ -19,6 +25,6 @@ function binarySearch(arr, searchValue, low, high) {
 
 }
 
-
-var items = [2,5,8,12,16,23,38,56,72,91];
-console.log(binarySearch(items,91,0,items.length));
+module.exports={
+    binarySearch
+}

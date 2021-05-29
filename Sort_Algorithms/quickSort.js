@@ -54,8 +54,7 @@ function quickSort(items, left, right) {
     return items;
 }
 
-// var items = [10, 30, 80, 90, 40, 50, 70];
-var items = [5, 3, 7, 6, 2, 9, 1];
+module.exports = {
+    quickSort
+}
 
-quickSort(items, 0, items.length - 1);
-console.log(items);

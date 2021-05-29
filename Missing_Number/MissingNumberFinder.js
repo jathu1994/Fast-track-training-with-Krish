@@ -1,5 +1,9 @@
-//assumption is given
-// only one number is missing in the array
+/*assumption is given
+ only one number is missing in the array
+it sort the array and calculate the difference between adjusant element
+if diference is grater than one it calculate and return missing number
+*/
+
 function findMissing(arr){
 
     arr.sort(function(a, b){return a-b});
@@ -18,5 +22,8 @@ function findMissing(arr){
     return `missing number may be ${arr[0]-1} or ${arr[arr.length-1]+1}`
 }
 
-var items = [4,5,6,7,8,9,10,2,3];
-console.log(findMissing(items));
+module.exports={
+    findMissing
+
+}
+

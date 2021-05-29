@@ -1,5 +1,12 @@
+/*
+this function compares the adjusant element and swap according to condition. 
+for sorting in acending order bigger number is sswaped to right 
+and finally at end of one loop biggest number is placed at last index.
+same process will repeated decrementing the last index 
+since the last elements will be in order from the previous iteration
+*/
 function bubbleSort(arr) {
-    var n = items.length;
+    var n = arr.length;
     var i, j;
     for (i = 0; i < n - 1; i++) {
 
@@ -17,7 +24,7 @@ function bubbleSort(arr) {
     }
 }
 
-var items = [64, 34, 25, 10, 22];
-bubbleSort(items);
-console.log("Sorted array:");
-console.log(items);
+module.exports = {
+    bubbleSort
+}
+

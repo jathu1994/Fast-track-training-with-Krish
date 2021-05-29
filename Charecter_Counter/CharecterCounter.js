@@ -30,5 +30,8 @@ function countCharecters(sentance) {
 
 }
 
-var sentance = "hi i'am jatharthan-";
-console.log(countCharecters(sentance));
+module.exports={
+    countCharecters
+
+}
+

@@ -9,7 +9,7 @@ function checkAnagram(name1, name2) {
         name1Arr.sort();
         name2Arr.sort();
 
-        //iterating bith array and checking for any mismatch
+        //iterating both array and checking for any mismatch
         for (i = 0; i < name1Arr.length; i++) {
 
             if (name1Arr[i] != name2Arr[i]) {
@@ -26,4 +26,7 @@ function checkAnagram(name1, name2) {
 
 }
 
-console.log(checkAnagram("hearrt", "eartrh"));
+module.exports = {
+    checkAnagram
+
+}

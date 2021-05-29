@@ -1,0 +1,13 @@
+{
+  "name": "anagram_checker",
+  "version": "1.0.0",
+  "description": "this application checks given two words are anagram",
+  "main": "Application.js",
+  "scripts": {
+    "start": "node Application.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "author": "jatharthan",
+  "license": "ISC"
+}

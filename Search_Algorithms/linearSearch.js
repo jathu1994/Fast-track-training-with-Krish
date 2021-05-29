@@ -1,3 +1,6 @@
+/*
+this runs through the whole array until it finds the search value
+*/
 function linearSearch(arr,searchValue){
 
     var foundAtIndex = -1;
@@ -7,6 +10,7 @@ function linearSearch(arr,searchValue){
         if(arr[i] == searchValue){
 
             foundAtIndex = i;
+            return foundAtIndex;
 
         }
 
@@ -16,5 +20,6 @@ function linearSearch(arr,searchValue){
 
 }
 
-var items = [10, 20, 80, 30, 60, 50, 110, 100, 130, 170];
-console.log(linearSearch(items,111));
+module.exports = {
+    linearSearch
+}

@@ -1,0 +1,12 @@
+{
+  "name": "search_algorithms",
+  "version": "1.0.0",
+  "description": "this explains linear search and binarysearch",
+  "main": "Application.js",
+  "scripts": {
+    "start": "node Application.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jatharthan",
+  "license": "ISC"
+}
