@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="col-md-3">
+
+        <form #fibinoForm="ngForm" (ngSubmit)= "getValues(fibinoForm.value)">
+            <div class="form-group">
+              <label for="searchTerm">Enter a number</label>
+              <input type="number" class="form-control" id="searchTerm" placeholder="searchTerm" name="searchTerm" ngModel>
+            </div>
+            <hr>
+            <div><p>{{fibinoResults}}</p></div>
+            <hr>
+            <div><button type="submit" class="btn btn-primary">Submit</button></div>
+
+          </form>
+    </div>
+    
+  </div>  
+  
+  
