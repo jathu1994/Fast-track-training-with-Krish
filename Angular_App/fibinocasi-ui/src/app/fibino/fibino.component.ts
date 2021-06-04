@@ -15,6 +15,8 @@ export class FibinoComponent implements OnInit {
     }
     else{
       this.fibinoResults = formData.searchTerm + "th fibinocasi number is " + this.calculateFibinocasi(formData.searchTerm);
+      // this.fibinoResults = formData.searchTerm + "th fibinocasi number is " + this.calculateSumFibinocasi(4,6);
+      
     }
     
   }
@@ -25,6 +27,19 @@ export class FibinoComponent implements OnInit {
     }
     return this.calculateFibinocasi(inputValue - 1) + this.calculateFibinocasi(inputValue - 2);
   }
+
+  calculateSumFibinocasi(lowerLimit:number , upperLimit:number):number{
+
+    let sum = 0;
+    for(let i=lowerLimit;i<upperLimit;i++){
+
+      sum += this.calculateFibinocasi(i);
+
+    }
+    return sum;
+
+  }
+
 
   constructor() { }
 

@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FibinoComponent } from './fibino/fibino.component';
-import{FormsModule} from '@angular/forms'
+import{FormsModule} from '@angular/forms';
+import { WordsWithVovelsFinderComponent } from './words-with-vovels-finder/words-with-vovels-finder.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    FibinoComponent
+    FibinoComponent,
+    WordsWithVovelsFinderComponent
     
   ],
   imports: [

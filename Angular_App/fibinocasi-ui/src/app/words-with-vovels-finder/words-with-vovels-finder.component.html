@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="col-md-3">
+
+        <form #fibinoForm="ngForm" (ngSubmit)= "getValues(fibinoForm.value)">
+            <div class="form-group">
+              <label for="sentance">Enter A sentance</label>
+              <input type="text" class="form-control" id="sentance" placeholder="type a sentance" name="sentance" ngModel>
+            </div>
+            <br>
+            <div><button type="submit" class="btn btn-primary">Submit</button></div>
+
+        </form>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Results</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let word of resultArray">
+                    <th>{{word}}</th>
+                  </tr>
+                </tbody>
+              </table>
+
+          
+    </div>
+    
+  </div>  
